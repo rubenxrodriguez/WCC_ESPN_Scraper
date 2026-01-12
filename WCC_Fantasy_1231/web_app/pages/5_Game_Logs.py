@@ -71,7 +71,9 @@ player = st.selectbox("Select a player:", sorted(players))
 jerseynum = fantasy_stats.loc[
     fantasy_stats["Full Name"] == player, "#"
 ].iloc[0]
-
+hometown = fantasy_stats.loc[fantasy_stats["Full Name"] == player, "Hometown"].iloc[0]
+year = fantasy_stats.loc[fantasy_stats["Full Name"] == player, "Year"].iloc[0]
+height = fantasy_stats.loc[fantasy_stats["Full Name"] == player, "Ht."].iloc[0]
 jersey_display = f" #{int(jerseynum)}" if pd.notna(jerseynum) else ""
 
 
@@ -81,12 +83,14 @@ player_logs = gamelog[gamelog["Name"].apply(make_clean_name) == clean_player]
 # Display player image if available
 if not player_logs.empty and 'ImageURL' in fantasy_stats.columns:
     player_image_url = fantasy_stats[fantasy_stats['Full Name'] == player]['ImageURL'].iloc[0]
+
     if pd.notna(player_image_url):
         st.image(player_image_url, width=120)
 
 
+
 if not player_logs.empty:
-    st.subheader(f"📈 {player}{jersey_display} — Game Log")
+    st.subheader(f"📈 {player}{jersey_display}{year}{height}{hometown} — Game Log")
     st.dataframe(
         player_logs[
             ["Date", "Team", "Opponent", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TO", "FantasyPts",'FGM','FGA','3PM','3PA']

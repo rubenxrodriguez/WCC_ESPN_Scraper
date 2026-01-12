@@ -227,11 +227,12 @@ if show_season_avgs:
     team_latest = team_latest.rename(columns={lt_player: "Player", lt_team: "Team"})
     team_latest["Player"] = team_latest["Player"].astype(str).str.strip()
     team_latest["Team"] = team_latest["Team"].astype(str).str.strip()
+    team_latest["#"] = team_latest["#"].astype(str)
 
     team_roster = rosters[rosters["Team"] == selected_team].copy()
 
     # Merge roster list + season stats
-    out = team_roster.merge(team_latest, on=["Player", "Team"], how="left")
+    out = team_roster.merge(team_latest, on=["Player", "Team","#"], how="left")
 
 else:
     # Fantasy view from gamelog aggregates
@@ -299,7 +300,7 @@ if show_season_avgs:
     display_cols = ["Player"] + [c for c in avg_cols if c != "Player" and c != "Team"]
 
 else:
-    display_cols = ["Player"] + [c for c in ["Games", "FantasyPts_sum", "FantasyPts_per_game", "MP_sum", "MP_per_game"] if c in out.columns]
+    display_cols = ["#","Player"] + [c for c in ["Games", "FantasyPts_sum", "FantasyPts_per_game", "MP_sum", "MP_per_game"] if c in out.columns]
 
 show_df = out[display_cols].copy()
 

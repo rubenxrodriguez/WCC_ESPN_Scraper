@@ -18,8 +18,8 @@ TOTAL_WEEKS = 9  # future schedule weeks 1..9
 # -----------------------------
 # Load data
 # -----------------------------
-fantasystats = pd.read_csv("data/fantasy/fantasy_stats_latest.csv")
-gamelog = pd.read_csv("Gamelog/gamelog.csv")
+fantasystats = pd.read_csv("WCC_Fantasy_1231/data/fantasy/fantasy_stats_latest.csv")
+gamelog = pd.read_csv("WCC_Fantasy_1231/Gamelog/gamelog.csv")
 
 
 # fantasy_stats_latest mapping columns

@@ -301,7 +301,7 @@ if show_season_avgs:
     if not avg_cols:
         avg_cols = [c for c in out.columns if c not in {"Team"}]
 
-    display_cols = ["Player"] + [c for c in avg_cols if c != "Player" and c != "Team"]
+    display_cols = ["Player"] + ['#'] + [c for c in avg_cols if c != "Player" and c != "Team"]
 
 else:
     display_cols = ["#","Player"] + [c for c in ["Games", "FantasyPts_sum", "FantasyPts_per_game", "MP_sum", "MP_per_game"] if c in out.columns]

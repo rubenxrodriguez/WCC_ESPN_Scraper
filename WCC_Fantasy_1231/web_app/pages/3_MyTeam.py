@@ -9,8 +9,8 @@ st.title("🧍 My Team Roster")
 # -----------------------------
 @st.cache_data
 def load_data():
-    fantasy = pd.read_csv("data/fantasy/fantasy_stats_latest.csv")
-    gamelog = pd.read_csv("Gamelog/gamelog.csv")
+    fantasy = pd.read_csv("WCC_Fantasy_1231/data/fantasy/fantasy_stats_latest.csv")
+    gamelog = pd.read_csv("WCC_Fantasy_1231/Gamelog/gamelog.csv")
     teams = fantasy["userteam"].unique().tolist()
     if "FreeAgent" in teams:
         teams.remove("FreeAgent")

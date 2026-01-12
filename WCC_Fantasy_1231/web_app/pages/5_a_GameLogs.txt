@@ -1,0 +1,47 @@
+import streamlit as st
+import pandas as pd
+from unidecode import unidecode
+
+st.set_page_config(page_title="Player Game Logs", page_icon="📅")
+
+st.title("📅 Player Game Logs")
+
+# --- Load Data ---
+@st.cache_data
+def load_data():
+    fantasy_stats = pd.read_csv("data/fantasy/fantasy_stats_latest.csv")
+    gamelog = pd.read_csv("Gamelog/gamelog-0102.csv")
+    return fantasy_stats, gamelog
+
+fantasy_stats, gamelog = load_data()
+
+# --- Clean and prep ---
+def make_clean_name(name):
+    return unidecode(name.strip().lower()) if isinstance(name, str) else ""
+
+# --- 1️⃣ Master Game Log Viewer ---
+st.subheader("📜 All Game Logs")
+
+# Convert Date column
+if "Date" in gamelog.columns:
+    gamelog["Date"] = pd.to_datetime(gamelog["Date"], errors="coerce").dt.date
+
+
+# Date range filter
+min_date = gamelog["Date"].min()
+max_date = gamelog["Date"].max()
+start_date, end_date = st.date_input(
+    "Filter by date range:",
+    value=(min_date, max_date),   # ✅ default full season
+    min_value=min_date,
+    max_value=max_date
+)
+wcc_only = st.checkbox("WCC only", value=False)
+
+st.dataframe(
+    gamelog.sort_values("Date", ascending=False)[
+        ["Date", "Name", "Team", "Opponent", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TO", "FantasyPts"]
+    ],
+    use_container_width=True,
+    height=400
+)

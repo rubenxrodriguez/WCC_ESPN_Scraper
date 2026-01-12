@@ -1,0 +1,78 @@
+import streamlit as st
+import pandas as pd
+import random
+
+st.set_page_config(page_title="User Team Matchups", page_icon="🗓️")
+
+st.title("🗓️ Fantasy League Matchups & Scoreboard")
+
+# --- Load fantasy stats ---
+fantasystats = pd.read_csv("data/fantasy/fantasy_stats_latest.csv")
+
+# --- Setup base teams from fantasy_stats ---
+user_teams = fantasystats['userteam'].unique().tolist()
+user_teams.remove('FreeAgent')
+
+weeks_per_matchup = 1
+matchups_per_week = 3
+total_weeks = 9  # total weeks in season
+
+# --- Generate schedule ---
+if "matchups" not in st.session_state:
+    schedule = []
+    matchup_id = 1
+    week = 1
+
+    while week <= total_weeks:
+        teams = list(user_teams)
+        random.shuffle(teams)
+
+        # create 3 matchups
+        for i in range(0, len(teams), 2):
+            schedule.append({
+                "Matchup #": matchup_id,
+                "Week Start": week,
+                "Week End": week + 1,
+                "Team A": teams[i],
+                "Team B": teams[i + 1],
+                "Winner": None
+            })
+            matchup_id += 1
+
+        week += 2
+
+    st.session_state.matchups = pd.DataFrame(schedule)
+
+# --- Compute winners automatically ---
+matchups_df = st.session_state.matchups.copy()
+fantasystats['FantasyPts_sum'] = pd.to_numeric(fantasystats['FantasyPts_sum'], errors='coerce').fillna(0)
+
+# Optional: if you have a week column, you can filter by week. For now we'll sum all FantasyPts
+for idx, row in matchups_df.iterrows():
+    team_a_pts = fantasystats.loc[fantasystats['userteam'] == row['Team A'], 'FantasyPts_sum'].sum()
+    team_b_pts = fantasystats.loc[fantasystats['userteam'] == row['Team B'], 'FantasyPts_sum'].sum()
+
+    if team_a_pts > team_b_pts:
+        winner = row['Team A']
+    elif team_b_pts > team_a_pts:
+        winner = row['Team B']
+    else:
+        winner = "Tie"
+
+    matchups_df.at[idx, "Winner"] = winner
+    matchups_df.at[idx, "Team A Pts"] = team_a_pts
+    matchups_df.at[idx, "Team B Pts"] = team_b_pts
+
+st.subheader("📋 Full Matchup Schedule with Winners")
+st.dataframe(matchups_df, use_container_width=True)
+
+# --- Scoreboard by week ---
+week_input = st.number_input("Select week to view scoreboard", min_value=1, max_value=total_weeks, step=1)
+scoreboard = matchups_df[(matchups_df["Week Start"] <= week_input) & (matchups_df["Week End"] >= week_input)]
+st.subheader(f"🏀 Scoreboard Week {week_input}")
+st.dataframe(scoreboard[["Matchup #","Week Start","Week End","Team A","Team B","Team A Pts","Team B Pts","Winner"]], use_container_width=True)
+
+# --- Optional: regenerate schedule ---
+#if st.button("🔄 Randomize Matchups Again"):
+ #   st.session_state.pop("matchups")
+  #  st.rerun()

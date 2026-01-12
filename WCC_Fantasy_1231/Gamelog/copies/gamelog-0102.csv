@@ -1,0 +1,123 @@
+Name,Jersey #,Team,Opponent,didWin,Date,MIN,OREB,DREB,REB,AST,STL,BLK,TO,PF,FGM,FGA,3PM,3PA,FTM,FTA,efg%,PTS,FantasyPts,isWCC
+Natasa Tausova,#12,San Francisco Dons,San Diego Toreros,1,01/02/26,28,1,5,6,1,0,0,4,4,3,4,2,3,1,3,1.0,9,14.0,True
+Noelia Mourio,#3,San Francisco Dons,San Diego Toreros,1,01/02/26,27,2,7,9,1,2,1,4,3,4,6,0,0,1,2,0.667,9,28.0,True
+Aina Cargol,#9,San Francisco Dons,San Diego Toreros,1,01/02/26,35,1,3,4,6,1,0,3,1,4,8,2,4,2,4,0.625,12,35.0,True
+Candy Edokpaigbe,#23,San Francisco Dons,San Diego Toreros,1,01/02/26,38,1,5,6,1,1,3,3,1,5,8,2,2,5,8,0.75,17,43.0,True
+Mara Neira,#2,San Francisco Dons,San Diego Toreros,1,01/02/26,31,2,1,3,2,1,0,0,1,3,13,1,9,0,0,0.269,7,10.0,True
+Nevaeh Ferrara Horne,#7,San Francisco Dons,San Diego Toreros,1,01/02/26,2,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0.0,0,3.0,True
+Sol Castro,#24,San Francisco Dons,San Diego Toreros,1,01/02/26,13,1,1,2,1,0,0,0,1,2,6,0,0,1,2,0.333,5,10.0,True
+Meghan McIntyre,#4,San Francisco Dons,San Diego Toreros,1,01/02/26,11,1,4,5,1,0,0,1,0,0,1,0,1,0,0,0.0,0,4.0,True
+Paula Tirado,#22,San Francisco Dons,San Diego Toreros,1,01/02/26,13,0,1,1,1,1,0,2,3,0,2,0,2,0,0,0.0,0,-0.0,True
+Olivia Williams,#21,San Francisco Dons,San Diego Toreros,1,01/02/26,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,1.0,True
+Ayla Williams,#22,San Diego Toreros,San Francisco Dons,0,01/02/26,5,0,1,1,0,0,0,1,3,0,1,0,0,2,2,0.0,2,0.0,True
+Olivia Owens,#24,San Diego Toreros,San Francisco Dons,0,01/02/26,28,0,3,3,2,0,1,3,2,3,10,0,3,0,1,0.3,6,6.0,True
+Lilly Amor,#3,San Diego Toreros,San Francisco Dons,0,01/02/26,10,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0.0,0,-2.0,True
+Kylie Ray,#6,San Diego Toreros,San Francisco Dons,0,01/02/26,40,1,8,9,5,3,0,5,5,10,21,4,8,0,0,0.571,24,57.0,True
+Hallie Rhodes,#20,San Diego Toreros,San Francisco Dons,0,01/02/26,38,1,0,1,1,3,1,1,1,3,16,0,3,1,2,0.188,7,12.0,True
+Eva Ruse,#15,San Diego Toreros,San Francisco Dons,0,01/02/26,33,2,2,4,2,0,1,1,0,3,8,0,1,0,0,0.375,6,17.0,True
+Dresha Moore,#1,San Diego Toreros,San Francisco Dons,0,01/02/26,18,1,3,4,0,1,0,0,4,0,2,0,0,1,2,0.0,1,6.0,True
+Helen Holley,#10,San Diego Toreros,San Francisco Dons,0,01/02/26,21,3,3,6,2,1,0,0,2,3,6,0,2,0,0,0.5,6,22.0,True
+Jayden Rhodes,#19,San Diego Toreros,San Francisco Dons,0,01/02/26,7,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1.5,3,6.0,True
+Malia Ruud,#55,Washington State Cougars,Portland Pilots,0,01/02/26,31,2,2,4,0,1,0,3,1,6,10,0,0,2,2,0.6,14,23.0,True
+Tanja Valancic,#9,Washington State Cougars,Portland Pilots,0,01/02/26,14,0,2,2,0,0,0,2,2,0,1,0,0,0,0,0.0,0,-4.0,True
+Charlotte Abraham,#10,Washington State Cougars,Portland Pilots,0,01/02/26,30,2,7,9,1,0,0,4,3,1,7,1,6,2,2,0.214,5,0.0,True
+Mackenzie Chatfield,#8,Washington State Cougars,Portland Pilots,0,01/02/26,34,3,1,4,3,1,0,6,1,1,7,0,0,0,0,0.143,2,-0.0,True
+Eleonora Villa,#2,Washington State Cougars,Portland Pilots,0,01/02/26,34,0,3,3,3,0,0,7,2,3,9,0,3,7,8,0.333,13,7.0,True
+Lauren Glazier,#25,Washington State Cougars,Portland Pilots,0,01/02/26,7,0,0,0,0,0,0,1,2,0,3,0,0,0,0,0.0,0,-6.0,True
+Malvina Haziri,#1,Washington State Cougars,Portland Pilots,0,01/02/26,3,0,0,0,0,0,0,1,2,0,0,0,0,0,0,,0,-2.0,True
+Keandra Koorits,#15,Washington State Cougars,Portland Pilots,0,01/02/26,10,0,2,2,0,0,0,0,1,3,7,0,1,0,1,0.429,6,8.0,True
+Marta Alsina,#12,Washington State Cougars,Portland Pilots,0,01/02/26,7,0,0,0,1,0,0,0,0,0,0,0,0,0,0,,0,3.0,True
+Jean Chiu,#5,Washington State Cougars,Portland Pilots,0,01/02/26,30,0,5,5,0,3,0,0,1,4,5,1,2,0,0,0.9,9,32.0,True
+Lainey Spear,#20,Portland Pilots,Washington State Cougars,1,01/02/26,26,3,2,5,0,3,0,0,3,4,7,0,0,1,2,0.571,9,30.0,True
+Julia Dalan,#44,Portland Pilots,Washington State Cougars,1,01/02/26,25,3,4,7,2,2,0,2,3,7,13,0,1,0,0,0.538,14,37.0,True
+Rhyan Mogel,#22,Portland Pilots,Washington State Cougars,1,01/02/26,32,0,2,2,5,4,1,1,2,3,11,0,2,3,4,0.273,9,38.0,True
+Dyani Ananiev,#2,Portland Pilots,Washington State Cougars,1,01/02/26,32,1,2,3,0,2,1,5,2,3,9,1,7,0,0,0.389,7,4.0,True
+Florence Dallow,#3,Portland Pilots,Washington State Cougars,1,01/02/26,25,1,6,7,3,2,0,3,3,1,3,0,0,0,0,0.333,2,18.0,True
+Ella Zimmerman,#42,Portland Pilots,Washington State Cougars,1,01/02/26,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,,0,-2.0,True
+Jada Kennedy,#9,Portland Pilots,Washington State Cougars,1,01/02/26,13,0,1,1,0,0,1,0,3,1,3,0,0,0,0,0.333,2,8.0,True
+Brynn Smith,#12,Portland Pilots,Washington State Cougars,1,01/02/26,7,0,1,1,0,1,0,1,0,2,4,1,2,1,2,0.625,6,11.0,True
+Tiffany Barbosa,#7,Portland Pilots,Washington State Cougars,1,01/02/26,8,1,0,1,0,0,0,2,1,0,2,0,2,0,0,0.0,0,-7.0,True
+Natalie Fraley,#10,Portland Pilots,Washington State Cougars,1,01/02/26,8,1,1,2,2,0,0,1,0,0,1,0,1,2,2,0.0,2,8.0,True
+Nicole Anderson,#17,Portland Pilots,Washington State Cougars,1,01/02/26,23,0,2,2,0,0,0,2,1,4,8,3,7,0,0,0.688,11,14.0,True
+Edie Clarke,#7,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,28,5,3,8,2,2,1,1,0,5,10,0,0,0,0,0.5,10,37.0,True
+Abigail Shoff,#5,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,26,2,4,6,2,1,0,2,0,3,10,0,1,3,3,0.3,9,19.0,True
+Mauriana Hashemian-Orr,#3,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,20,1,5,6,4,3,0,0,3,1,5,0,1,0,0,0.2,2,28.0,True
+Jada Hunter,#0,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,16,0,0,0,1,3,0,0,4,0,2,0,0,0,0,0.0,0,12.0,True
+Emily Foy,#8,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,22,0,2,2,0,0,0,1,4,1,6,1,3,0,0,0.25,3,-1.0,True
+Melesungu Afeaki,#22,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,7,0,0,0,0,0,1,0,0,1,2,0,0,0,2,0.5,2,4.0,True
+Georgia Grigoropoulou,#10,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,2,0,0,0,0,0,0,1,2,0,1,0,0,0,0,0.0,0,-4.0,True
+Addi Wedin,#23,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,31,0,2,2,1,1,0,1,1,3,10,2,4,0,0,0.4,8,14.0,True
+Amy Kurkowski,#2,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,4,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0.0,0,-2.0,True
+Ella Wedin,#33,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,13,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0.0,0,-1.0,True
+Charlece Ohiaeri,#4,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,11,1,1,2,0,0,0,1,2,3,6,1,2,2,2,0.583,9,13.0,True
+Malia Latu,#13,Saint Mary's Gaels,Pepperdine Waves,0,01/02/26,20,2,2,4,1,0,0,4,3,3,9,0,1,3,3,0.333,9,6.0,True
+Shorna Preston,#12,Pepperdine Waves,Saint Mary's Gaels,1,01/02/26,31,2,13,15,1,0,3,3,3,5,9,0,1,4,7,0.556,14,40.0,True
+Ellison Guiney,#2,Pepperdine Waves,Saint Mary's Gaels,1,01/02/26,35,1,1,2,5,1,0,1,2,3,8,2,6,4,4,0.5,12,33.0,True
+Taija Sta. Maria,#1,Pepperdine Waves,Saint Mary's Gaels,1,01/02/26,38,1,4,5,3,1,0,1,1,1,6,0,2,1,2,0.167,3,14.0,True
+Lina Falk,#22,Pepperdine Waves,Saint Mary's Gaels,1,01/02/26,31,0,3,3,3,0,0,1,0,3,6,1,2,0,0,0.583,7,21.0,True
+Meghan Fiso,#13,Pepperdine Waves,Saint Mary's Gaels,1,01/02/26,32,1,4,5,3,2,0,5,1,5,10,1,2,3,3,0.55,14,30.0,True
+Irune Orio,#31,Pepperdine Waves,Saint Mary's Gaels,1,01/02/26,8,0,1,1,1,0,0,1,1,0,1,0,1,0,0,0.0,0,0.0,True
+Seleh Harmon,#30,Pepperdine Waves,Saint Mary's Gaels,1,01/02/26,14,1,1,2,0,0,0,2,2,1,6,1,5,0,0,0.25,3,-4.0,True
+Bella Green,#3,Pepperdine Waves,Saint Mary's Gaels,1,01/02/26,9,0,4,4,0,0,0,2,0,3,3,0,0,1,2,1.0,7,12.0,True
+Ivory Finley,#0,Pepperdine Waves,Saint Mary's Gaels,1,01/02/26,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,1.0,True
+Winner Bartholomew,#25,Pacific Tigers,Oregon State Beavers,0,01/02/26,21,0,1,1,1,0,0,1,1,6,14,0,0,2,2,0.429,14,20.0,True
+Daria Nestorov,#21,Pacific Tigers,Oregon State Beavers,0,01/02/26,21,0,2,2,3,0,0,2,2,1,7,0,5,1,2,0.143,3,-0.0,True
+Nyah Lowery,#15,Pacific Tigers,Oregon State Beavers,0,01/02/26,22,1,4,5,1,2,0,1,2,2,8,1,3,2,2,0.312,7,18.0,True
+Stella Szabo,#5,Pacific Tigers,Oregon State Beavers,0,01/02/26,17,2,1,3,0,1,0,0,0,1,2,1,2,0,2,0.75,3,9.0,True
+Sydney Ward,#10,Pacific Tigers,Oregon State Beavers,0,01/02/26,24,2,5,7,1,1,0,3,5,0,1,0,0,0,0,0.0,0,5.0,True
+Luisa Anderegg,#11,Pacific Tigers,Oregon State Beavers,0,01/02/26,18,2,1,3,2,1,0,1,1,1,6,1,5,0,0,0.25,3,8.0,True
+Sophia Mindermann,#8,Pacific Tigers,Oregon State Beavers,0,01/02/26,21,0,1,1,1,0,0,1,1,5,10,4,7,1,1,0.7,15,25.0,True
+Liv Yergensen,#7,Pacific Tigers,Oregon State Beavers,0,01/02/26,18,0,1,1,1,1,0,0,2,2,3,1,2,0,0,0.833,5,16.0,True
+Hannah Burg,#3,Pacific Tigers,Oregon State Beavers,0,01/02/26,13,0,0,0,2,0,0,0,2,2,3,1,2,0,0,0.833,5,14.0,True
+Mali Ennis,#2,Pacific Tigers,Oregon State Beavers,0,01/02/26,5,0,1,1,1,0,0,1,0,0,0,0,0,0,0,,0,2.0,True
+Marina Radocaj,#9,Pacific Tigers,Oregon State Beavers,0,01/02/26,20,3,0,3,0,1,1,0,0,3,8,0,0,0,0,0.375,6,17.0,True
+Lizzy Williamson,#15,Oregon State Beavers,Pacific Tigers,1,01/02/26,16,1,4,5,2,0,1,0,0,2,3,0,0,0,2,0.667,4,20.0,True
+Ally Schimel,#4,Oregon State Beavers,Pacific Tigers,1,01/02/26,20,0,1,1,1,1,0,0,1,3,4,2,2,0,0,1.0,8,24.0,True
+Jenna Villa,#3,Oregon State Beavers,Pacific Tigers,1,01/02/26,30,1,6,7,1,1,0,0,0,11,18,4,7,6,7,0.722,32,66.0,True
+Kennedie Shuler,#1,Oregon State Beavers,Pacific Tigers,1,01/02/26,29,0,3,3,6,1,2,6,2,3,7,0,0,0,1,0.429,6,24.0,True
+Tiara Bolden,#0,Oregon State Beavers,Pacific Tigers,1,01/02/26,28,1,4,5,4,0,0,1,4,3,8,1,4,0,0,0.438,7,22.0,True
+Lara Alonso-Basurto,#22,Oregon State Beavers,Pacific Tigers,1,01/02/26,6,0,0,0,0,1,0,0,0,0,0,0,0,0,0,,0,4.0,True
+Elisa Mehyar,#16,Oregon State Beavers,Pacific Tigers,1,01/02/26,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,1.0,True
+Susana Yepes,#10,Oregon State Beavers,Pacific Tigers,1,01/02/26,7,0,0,0,1,0,0,0,1,1,1,1,1,0,0,1.5,3,10.0,True
+Nene Sow,#32,Oregon State Beavers,Pacific Tigers,1,01/02/26,14,2,4,6,0,0,1,1,1,4,5,0,0,1,2,0.8,9,24.0,True
+Keira Lindemans,#25,Oregon State Beavers,Pacific Tigers,1,01/02/26,13,0,2,2,0,0,0,0,1,2,2,1,1,0,0,1.25,5,14.0,True
+Katelyn Field,#2,Oregon State Beavers,Pacific Tigers,1,01/02/26,18,0,0,0,1,0,0,2,0,1,2,1,2,0,0,0.75,3,4.0,True
+Cloe Vecina,#31,Oregon State Beavers,Pacific Tigers,1,01/02/26,12,0,1,1,2,2,0,2,1,1,3,0,1,2,2,0.333,4,14.0,True
+Mackenzie Shivers,#12,Oregon State Beavers,Pacific Tigers,1,01/02/26,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,1.0,True
+Lucia Navarro,#7,Oregon State Beavers,Pacific Tigers,1,01/02/26,4,0,0,0,0,0,0,1,3,0,2,0,0,0,0,0.0,0,-4.0,True
+Ava Schmidt,#13,Santa Clara Broncos,Loyola Marymount Lions,0,01/02/26,26,0,3,3,3,3,4,2,3,3,8,0,5,0,0,0.375,6,34.0,True
+Kylee Fox,#30,Santa Clara Broncos,Loyola Marymount Lions,0,01/02/26,35,0,4,4,1,1,0,1,1,3,9,2,6,2,2,0.444,10,18.0,True
+Sophie Glancey,#12,Santa Clara Broncos,Loyola Marymount Lions,0,01/02/26,23,1,1,2,1,0,1,1,2,9,11,0,0,2,2,0.818,20,43.0,True
+Ashley Hawkins,#23,Santa Clara Broncos,Loyola Marymount Lions,0,01/02/26,33,0,3,3,6,2,0,5,3,6,9,0,2,2,4,0.667,14,36.0,True
+Maia Jones,#9,Santa Clara Broncos,Loyola Marymount Lions,0,01/02/26,28,4,1,5,5,0,0,2,5,6,13,3,8,1,2,0.577,16,35.0,True
+Tyler Gildersleeve-Stiles,#34,Santa Clara Broncos,Loyola Marymount Lions,0,01/02/26,13,1,3,4,1,4,0,3,2,0,0,0,0,1,2,,1,14.0,True
+Delainey Miller,#20,Santa Clara Broncos,Loyola Marymount Lions,0,01/02/26,15,1,2,3,1,0,0,2,1,3,8,0,2,1,2,0.375,7,6.0,True
+Aniya Hooker,#2,Santa Clara Broncos,Loyola Marymount Lions,0,01/02/26,27,2,1,3,1,2,1,2,2,5,10,1,5,0,1,0.55,11,24.0,True
+Maya Hernandez,#55,Loyola Marymount Lions,Santa Clara Broncos,1,01/02/26,31,2,3,5,2,7,0,0,3,11,17,0,0,3,6,0.647,25,76.0,True
+Ivana Krajina,#13,Loyola Marymount Lions,Santa Clara Broncos,1,01/02/26,22,1,2,3,2,3,0,4,4,1,1,0,0,4,4,1.0,6,20.0,True
+Jess Lawson,#0,Loyola Marymount Lions,Santa Clara Broncos,1,01/02/26,31,4,3,7,2,1,0,2,3,5,18,0,2,11,11,0.278,21,34.0,True
+Andjela Matic,#28,Loyola Marymount Lions,Santa Clara Broncos,1,01/02/26,30,0,3,3,5,0,0,3,2,2,6,2,5,5,5,0.5,11,25.0,True
+Carly Heidger,#5,Loyola Marymount Lions,Santa Clara Broncos,1,01/02/26,23,3,2,5,0,1,0,2,0,3,7,0,0,0,0,0.429,6,12.0,True
+Kayla Jones,#24,Loyola Marymount Lions,Santa Clara Broncos,1,01/02/26,9,4,1,5,1,0,0,0,2,2,7,0,0,0,0,0.286,4,12.0,True
+Paula Reus Piza,#30,Loyola Marymount Lions,Santa Clara Broncos,1,01/02/26,17,1,3,4,2,1,0,1,1,5,6,1,2,2,2,0.917,13,36.0,True
+Zawadi Ogot,#54,Loyola Marymount Lions,Santa Clara Broncos,1,01/02/26,16,0,1,1,1,1,1,2,0,3,4,0,0,0,0,0.75,6,18.0,True
+Allison Clarke,#4,Loyola Marymount Lions,Santa Clara Broncos,1,01/02/26,21,0,0,0,1,1,0,2,2,0,5,0,5,0,0,0.0,0,-8.0,True
+Lauren Whittaker,#33,Gonzaga Bulldogs,Seattle U Redhawks,1,01/02/26,23,2,8,10,1,1,0,1,2,7,12,0,2,2,2,0.583,16,39.0,True
+Taylor Smith,#20,Gonzaga Bulldogs,Seattle U Redhawks,1,01/02/26,24,1,5,6,5,2,2,2,2,5,5,0,0,1,2,1.0,11,52.0,True
+Teryn Gardner,#24,Gonzaga Bulldogs,Seattle U Redhawks,1,01/02/26,23,4,3,7,2,1,0,2,1,4,6,3,5,0,0,0.917,11,32.0,True
+Zeryhia Aokuso,#55,Gonzaga Bulldogs,Seattle U Redhawks,1,01/02/26,24,0,4,4,2,0,0,0,3,1,9,0,1,1,2,0.111,3,6.0,True
+Allie Turner,#11,Gonzaga Bulldogs,Seattle U Redhawks,1,01/02/26,32,0,1,1,8,0,0,5,1,6,12,4,8,0,0,0.667,16,38.0,True
+Jaiden Haile,#23,Gonzaga Bulldogs,Seattle U Redhawks,1,01/02/26,19,1,2,3,0,0,0,0,1,2,4,0,1,6,9,0.5,10,15.0,True
+McKynnlie Dalan,#22,Gonzaga Bulldogs,Seattle U Redhawks,1,01/02/26,15,1,2,3,1,2,0,1,1,0,1,0,0,2,2,0.0,2,14.0,True
+Julia Wilson,#3,Gonzaga Bulldogs,Seattle U Redhawks,1,01/02/26,21,0,2,2,3,1,0,2,3,1,2,0,0,0,2,0.5,2,12.0,True
+Paige Lofing,#1,Gonzaga Bulldogs,Seattle U Redhawks,1,01/02/26,10,0,0,0,1,0,1,1,1,3,4,3,4,0,0,1.125,9,22.0,True
+Christabel Osarobo,#12,Gonzaga Bulldogs,Seattle U Redhawks,1,01/02/26,9,0,1,1,2,0,0,2,0,2,3,0,0,1,2,0.667,5,10.0,True
+Tamia Stricklin,#14,Seattle U Redhawks,Gonzaga Bulldogs,0,01/02/26,29,0,4,4,3,2,0,3,4,4,13,1,5,1,2,0.346,10,18.0,True
+Lucija Milkovic,#7,Seattle U Redhawks,Gonzaga Bulldogs,0,01/02/26,22,1,2,3,3,0,1,2,2,3,4,2,2,0,0,1.0,8,26.0,True
+Dylan Mogel,#5,Seattle U Redhawks,Gonzaga Bulldogs,0,01/02/26,18,0,2,2,1,1,0,2,1,1,4,0,0,0,0,0.25,2,4.0,True
+Sydnie Rodriguez,#24,Seattle U Redhawks,Gonzaga Bulldogs,0,01/02/26,31,3,3,6,4,2,0,0,3,1,8,1,4,1,2,0.188,4,22.0,True
+Ella Brubaker,#3,Seattle U Redhawks,Gonzaga Bulldogs,0,01/02/26,31,2,0,2,1,2,0,0,3,5,11,3,5,2,2,0.591,15,34.0,True
+Fia Proctor,#4,Seattle U Redhawks,Gonzaga Bulldogs,0,01/02/26,12,0,0,0,0,1,0,0,1,2,2,0,0,0,0,1.0,4,12.0,True
+Andjela Bigovic,#6,Seattle U Redhawks,Gonzaga Bulldogs,0,01/02/26,19,0,1,1,0,2,2,3,3,1,7,1,4,0,0,0.214,3,5.0,True
+Jana Vesic,#9,Seattle U Redhawks,Gonzaga Bulldogs,0,01/02/26,22,1,0,1,1,0,0,1,3,5,9,1,1,2,3,0.611,13,22.0,True
+Chloe Emanga,#8,Seattle U Redhawks,Gonzaga Bulldogs,0,01/02/26,16,1,1,2,3,0,1,1,1,0,4,0,1,0,0,0.0,0,7.0,True

@@ -1,0 +1,48 @@
+import streamlit as st
+import pandas as pd
+
+st.set_page_config(page_title="My Team", page_icon="🧍")
+
+st.title("🧍 My Team Roster")
+
+# --- Load Data ---
+@st.cache_data
+def load_data():
+    df = pd.read_csv("data/fantasy/fantasy_stats_latest.csv")
+    teams = df["userteam"].unique().tolist()
+    return df, teams
+
+df, teams = load_data()
+
+# --- Select Team ---
+team = st.selectbox("Select your team:", teams)
+
+roster = df[df["userteam"] == team].sort_values("FantasyPts_sum", ascending=False)
+
+
+# Create columns dynamically for visual layout
+cols = st.columns(4)
+
+for i, (idx, row) in enumerate(roster.iterrows()):
+    with cols[i%4]:
+        st.image(row["ImageURL"], width=120)
+        st.markdown(f"**{row['Full Name']}**")
+        st.caption(f"{row['FullTeamName']} | {row['Pos.']}")
+        st.write(f"**Fantasy Pts Mean:** {row['FantasyPts_mean']:.1f}")
+        st.write(f"**Fantasy Pts Sum:** {row['FantasyPts_sum']:.1f}")
+        st.write(f"Position Rank: `{row['rank_pos']}`")
+        st.write(f"Global Rank: `{row['rank_global']}`")
+
+
+st.divider()
+st.dataframe(
+    roster[
+        ["Full Name", "Pos.", "FullTeamName",'GP', "FantasyPts_sum", "FantasyPts_mean", 
+         "PTS_mean", "REB_mean", "AST_mean", "STL_mean", "BLK_mean",'rank_pos', 'rank_global']
+    ],
+    use_container_width=True
+)
+st.divider()
+# Optional: export button
+csv = roster.to_csv(index=False).encode("utf-8")
+st.download_button("Download Team CSV", csv, f"{team}_roster.csv", "text/csv")

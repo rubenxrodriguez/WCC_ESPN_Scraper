@@ -1,0 +1,230 @@
+
+first i need to see the effects of updating my points_dictionary with a round(1) button because then it becomes black box.
+so maybe i add points for making 3s. 
+guards make up 40% of the players. but of the top 100 fantasy scorers, guards make up the top 64%. 
+there are twice as many guards averaging 20 FP/G as there are F/C. so maybe i need to up blk and decrease steals. then increase pts but also decrease tov because guards get more.
+
+effectively i want to auto add week 0 to all games in my gamelog 
+then in my scraper i want to add the week_num function. 
+then in my update_fantasy_stats.py i need to add the week_num function
+then i need to rerun update_fantasy_stats 
+
+then upgrade MyTeam page
+
+then upgrade the weekly matchups / standings pages 
+
+then add a WCC Team Stats with a full stat sheet 
+
+
+
+
+
+
+
+right now i have these pages : 1_Draft_board.py        2_Standings.py          3_MyTeam.py             4_FreeAgents.py         5_Game_Logs.py          6_UserTeam_Matchups.py
+
+here are my ideas : 
+
+add a wcc_team rosters page where i can scroll through rosters and easily see player stats 
+so sort by team. then sort by fantasy points_sum 
+
+Adjusting fantasy points
+I like where its at now. id probably just reduce blocks by 0.5 and steals by 0.5 and increase points by 0.5.
+so this introduces half points in fantasy. might be a little annoying but overall not a big deal. 
+probably want to see a scatterplot of pts vs fantasypts 
+
+weekly standings vs global standings 
+    * weekly standings is literally defined week by week where week 1 is 12-28 to 01-04. should have a multiselect
+    * Need a better Title / Divider before User Team Weekly Standings 
+    * maybe put all players fantasy stats [table] on its own sheet 
+
+My Team page 
+    * add an individual game log tracker 
+    * before you display the game log table. show Season averages. PTS/REB/AST/FG%
+
+UserTeam Matchups Page 
+    * Understanding of how to do week to week
+    * maybe i need to add a new column to fantasy_stats_latest with week number. where we map game dates to week. 
+    * everything up to 1227 was week 0 [what we used for the draftboard]
+    * then we can do userteam matchups based on week number in fantasy_stats_latest
+
+
+
+fix my draftboard page 
+    * ADP based on stats through Dec 28. fantasy_stats_2025_12_27.csv 
+weekly standings vs global standings 
+    * weekly standings is literally defined week by week where week 1 is 12-28 to 01-04. should have a multiselect
+    * Need a better Title / Divider before User Team Weekly Standings 
+    * maybe put all players fantasy stats [table] on its own sheet 
+
+Adjusting fantasy points
+I like where its at now. id probably just reduce blocks by 0.5 and steals by 0.5 and increase points by 0.5.
+so this introduces half points in fantasy. might be a little annoying but overall not a big deal. 
+probably want to see a scatterplot of pts vs fantasypts 
+
+
+
+cd /Users/rrodr102/Desktop/Python/WCC_Fantasy_1105
+python3 web_app/update_fantasy_stats.py
+
+
+
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+                     Full Name   userteam  FantasyPts_sum  rank_global
+121             Eleonora Villa  UserTeam4            91.0          1.0
+75              Ashley Hawkins  UserTeam2            71.0          2.0
+78   Tyler Gildersleeve-Stiles  UserTeam1            67.0          3.0
+143                Rhyan Mogel  FreeAgent            64.0          4.0
+102             Daria Nestorov  UserTeam6            62.0          5.0
+159              Hallie Rhodes  FreeAgent            59.0          6.0
+28              Ellison Guiney  UserTeam2            58.0          7.0
+153                  Kylie Ray  UserTeam5            57.0          8.0
+77                   Kylee Fox  UserTeam2            54.0          9.0
+35                Seleh Harmon  FreeAgent            52.0         10.5
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+                     Full Name   userteam  FantasyPts_sum  rank_global
+81      Mauriana Hashemian-Orr  FreeAgent            92.0          1.0
+121             Eleonora Villa  UserTeam4            91.0          2.0
+63              Maya Hernandez  UserTeam3            88.0          3.0
+84                 Edie Clarke  UserTeam5            81.0          4.0
+75              Ashley Hawkins  UserTeam2            71.0          5.0
+78   Tyler Gildersleeve-Stiles  UserTeam1            67.0          6.0
+79                 Jada Hunter  FreeAgent            64.0          7.5
+143                Rhyan Mogel  FreeAgent            64.0          7.5
+102             Daria Nestorov  UserTeam6            62.0          9.0
+117           Candy Edokpaigbe  UserTeam4            59.0         11.0
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+                     Full Name   userteam  FantasyPts_sum  rank_global
+81      Mauriana Hashemian-Orr  FreeAgent            92.0          1.0
+121             Eleonora Villa  UserTeam4            91.0          2.0
+63              Maya Hernandez  UserTeam3            88.0          3.0
+84                 Edie Clarke  UserTeam5            81.0          4.0
+11                Tiara Bolden  UserTeam5            76.0          5.0
+75              Ashley Hawkins  UserTeam2            71.0          6.0
+78   Tyler Gildersleeve-Stiles  UserTeam1            67.0          7.0
+79                 Jada Hunter  FreeAgent            64.0          8.5
+143                Rhyan Mogel  FreeAgent            64.0          8.5
+102             Daria Nestorov  UserTeam6            62.0         10.0
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+                     Full Name   userteam  FantasyPts_sum  rank_global
+75              Ashley Hawkins  UserTeam2           142.0          1.0
+72              Sophie Glancey  UserTeam3           127.0          2.0
+84                 Edie Clarke  UserTeam5           116.0          3.0
+78   Tyler Gildersleeve-Stiles  UserTeam1           113.0          4.0
+11                Tiara Bolden  UserTeam5           112.0          5.0
+121             Eleonora Villa  UserTeam4           107.0          6.0
+81      Mauriana Hashemian-Orr  FreeAgent           105.0          7.0
+63              Maya Hernandez  UserTeam3           104.0          8.0
+133              Dyani Ananiev  FreeAgent            94.0          9.0
+117           Candy Edokpaigbe  UserTeam4            91.0         10.0
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+                     Full Name   userteam  FantasyPts_sum  rank_global
+75              Ashley Hawkins  UserTeam2           230.0          1.0
+11                Tiara Bolden  UserTeam5           211.0          2.0
+72              Sophie Glancey  UserTeam3           208.0          3.0
+84                 Edie Clarke  UserTeam5           200.0          4.0
+117           Candy Edokpaigbe  UserTeam4           152.0          5.0
+78   Tyler Gildersleeve-Stiles  UserTeam1           148.0          6.0
+73                 Ava Schmidt  UserTeam5           143.0          7.0
+81      Mauriana Hashemian-Orr  FreeAgent           140.0          8.5
+69                  Maia Jones  UserTeam2           140.0          8.5
+74             Delainey Miller  FreeAgent           137.0         10.0
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+                     Full Name   userteam  FantasyPts_sum  rank_global
+75              Ashley Hawkins  UserTeam2           264.0          1.0
+72              Sophie Glancey  UserTeam3           256.0          2.0
+11                Tiara Bolden  UserTeam5           243.0          3.0
+84                 Edie Clarke  UserTeam5           228.0          4.0
+12             Kennedie Shuler  UserTeam1           200.0          5.0
+117           Candy Edokpaigbe  UserTeam4           193.0          6.0
+73                 Ava Schmidt  UserTeam5           174.0          7.0
+69                  Maia Jones  UserTeam2           162.0          8.0
+121             Eleonora Villa  UserTeam4           161.0          9.5
+78   Tyler Gildersleeve-Stiles  UserTeam1           161.0          9.5
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+            Full Name   userteam  FantasyPts_sum  rank_global
+75     Ashley Hawkins  UserTeam2           226.0          1.0
+72     Sophie Glancey  UserTeam3           224.0          2.0
+11       Tiara Bolden  UserTeam5           207.0          3.0
+84        Edie Clarke  UserTeam5           193.0          4.0
+12    Kennedie Shuler  UserTeam1           178.0          5.0
+117  Candy Edokpaigbe  UserTeam4           161.0          6.0
+43       Allie Turner  UserTeam1           153.0          7.0
+69         Maia Jones  UserTeam2           151.0          8.0
+73        Ava Schmidt  UserTeam5           150.0          9.0
+49   Lauren Whittaker  UserTeam2           149.0         10.5
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+            Full Name   userteam  FantasyPts_sum  rank_global
+72     Sophie Glancey  UserTeam3           299.0          1.0
+75     Ashley Hawkins  UserTeam2           279.0          2.0
+84        Edie Clarke  UserTeam5           255.0          3.0
+133     Dyani Ananiev  FreeAgent           235.0          4.0
+49   Lauren Whittaker  UserTeam2           234.0          5.0
+117  Candy Edokpaigbe  UserTeam4           222.0          6.5
+69         Maia Jones  UserTeam2           222.0          6.5
+11       Tiara Bolden  UserTeam5           220.0          8.0
+12    Kennedie Shuler  UserTeam1           215.0          9.0
+43       Allie Turner  UserTeam1           201.0         10.0
+
+
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+            Full Name   userteam  FantasyPts_sum  rank_global
+49   Lauren Whittaker  UserTeam2           323.0          1.0
+75     Ashley Hawkins  UserTeam2           321.0          2.0
+84        Edie Clarke  UserTeam5           305.0          3.0
+72     Sophie Glancey  UserTeam3           299.0          4.0
+117  Candy Edokpaigbe  UserTeam4           288.0          5.0
+69         Maia Jones  UserTeam2           266.0          6.0
+43       Allie Turner  UserTeam1           247.0          7.5
+12    Kennedie Shuler  UserTeam1           247.0          7.5
+73        Ava Schmidt  UserTeam5           239.0          9.5
+32     Shorna Preston  FreeAgent           239.0          9.5
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+            Full Name   userteam  FantasyPts_sum  rank_global
+49   Lauren Whittaker  UserTeam2           323.0          1.0
+75     Ashley Hawkins  UserTeam2           321.0          2.0
+84        Edie Clarke  UserTeam5           305.0          3.0
+72     Sophie Glancey  UserTeam3           299.0          4.0
+117  Candy Edokpaigbe  UserTeam4           288.0          5.0
+69         Maia Jones  UserTeam2           266.0          6.0
+43       Allie Turner  UserTeam1           247.0          7.5
+12    Kennedie Shuler  UserTeam1           247.0          7.5
+73        Ava Schmidt  UserTeam5           239.0          9.5
+32     Shorna Preston  FreeAgent           239.0          9.5
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+            Full Name   userteam  FantasyPts_sum  rank_global
+49   Lauren Whittaker  UserTeam2           323.0          1.0
+75     Ashley Hawkins  UserTeam2           321.0          2.0
+84        Edie Clarke  UserTeam5           311.0          3.0
+72     Sophie Glancey  UserTeam3           299.0          4.0
+117  Candy Edokpaigbe  UserTeam4           288.0          5.0
+69         Maia Jones  UserTeam2           266.0          6.0
+11       Tiara Bolden  UserTeam5           265.0          7.0
+12    Kennedie Shuler  UserTeam1           261.0          8.0
+43       Allie Turner  UserTeam1           247.0          9.0
+32     Shorna Preston  FreeAgent           239.0         10.5
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+            Full Name   userteam  FantasyPts_sum  rank_global
+49   Lauren Whittaker  UserTeam2           372.0          1.0
+75     Ashley Hawkins  UserTeam2           363.0          2.0
+72     Sophie Glancey  UserTeam3           347.0          3.0
+84        Edie Clarke  UserTeam5           341.0          4.0
+32     Shorna Preston  FreeAgent           326.0          5.0
+117  Candy Edokpaigbe  UserTeam4           310.0          6.0
+28     Ellison Guiney  UserTeam2           300.0          7.0
+69         Maia Jones  UserTeam2           298.0          8.0
+11       Tiara Bolden  UserTeam5           289.0          9.0
+51        Jess Lawson  UserTeam4           287.0         10.0
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ 
+XVLWM4HK9R:WCC_Fantasy_1105 rrodr102$ python3 web_app/update_fantasy_stats.py
+            Full Name   userteam  FantasyPts_sum  rank_global
+49   Lauren Whittaker  UserTeam2           448.0          1.0
+75     Ashley Hawkins  UserTeam2           392.0          2.0
+72     Sophie Glancey  UserTeam3           391.0          3.0
+12    Kennedie Shuler  UserTeam1           370.0          4.0
+32     Shorna Preston  UserTeam3           369.0          5.0
+84        Edie Clarke  UserTeam5           355.0          6.0
+51        Jess Lawson  UserTeam4           334.0          7.5
+69         Maia Jones  UserTeam2           334.0          7.5
+133     Dyani Ananiev  UserTeam6           324.0          9.0
+121    Eleonora Villa  UserTeam4           313.0         10.0

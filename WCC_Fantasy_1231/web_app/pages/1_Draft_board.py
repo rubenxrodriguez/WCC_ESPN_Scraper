@@ -8,8 +8,8 @@ st.set_page_config(page_title="WCC Analytics Dashboard", layout="wide")
 st.title("🏀 WCC Analytics Dashboard")
 
 # --- Load conference player list ---
-all_players = pd.read_csv("data/wcc_concat_updated.csv")
-draft_board = pd.read_csv("data/fantasy/fantasy_stats_2025-12-27.csv")
+all_players = pd.read_csv("WCC_Fantasy_1231/data/wcc_concat_updated.csv")
+draft_board = pd.read_csv("WCC_Fantasy_1231/data/fantasy/fantasy_stats_2025-12-27.csv")
 
 
 # --- ADP based on FantasyPts_mean up to 2025-12-27 ---

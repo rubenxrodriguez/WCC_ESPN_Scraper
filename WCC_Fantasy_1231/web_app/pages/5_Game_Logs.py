@@ -90,7 +90,7 @@ if not player_logs.empty and 'ImageURL' in fantasy_stats.columns:
 
 
 if not player_logs.empty:
-    st.subheader(f"📈 {player}{jersey_display}{year}{height}{hometown} — Game Log")
+    st.subheader(f"📈 {player} | {jersey_display} | {year} | {height} | {hometown} — Game Log")
     st.dataframe(
         player_logs[
             ["Date", "Team", "Opponent", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TO", "FantasyPts",'FGM','FGA','3PM','3PA']

@@ -13,8 +13,8 @@ import streamlit as st
 # -----------------------------
 # Config
 # -----------------------------
-GAMELOG_CSV = "Gamelog/gamelog.csv"
-FANTASY_LATEST_CSV = "data/fantasy/fantasy_stats_latest.csv"
+GAMELOG_CSV = "WCC_Fantasy_1231/Gamelog/gamelog.csv"
+FANTASY_LATEST_CSV = "WCC_Fantasy_1231/data/fantasy/fantasy_stats_latest.csv"
 
 WCC_FULLTEAMNAMES = {
     "Santa Clara Broncos",

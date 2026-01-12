@@ -8,7 +8,7 @@ st.title("🧾 Available Free Agents")
 # --- Load Data ---
 @st.cache_data
 def load_fantasy_stats():
-    return pd.read_csv("data/fantasy/fantasy_stats_latest.csv")
+    return pd.read_csv("WCC_Fantasy_1231/data/fantasy/fantasy_stats_latest.csv")
 
 df = load_fantasy_stats()
 

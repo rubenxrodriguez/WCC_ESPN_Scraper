@@ -200,7 +200,7 @@ with c4:
 if show_season_avgs:
     # Pick likely season-average columns that might exist in your fantasy_stats_latest
     candidates = [
-        "FantasyPts", "FantasyPts/G", "FantasyPts_per_game",
+        "#","FantasyPts", "FantasyPts/G", "FantasyPts_per_game",
         "PTS", "REB", "AST", "MP",
         "FG%", "eFG%", "FT%", "3P%", "2P%",
         "STL", "BLK", "TO",

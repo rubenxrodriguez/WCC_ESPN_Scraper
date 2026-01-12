@@ -130,9 +130,11 @@ gl_team   = _pick_col(gamelog, ["Team"])
 gl_date   = _pick_col(gamelog, ["Date"])
 gl_fpts   = _pick_col(gamelog, ["FantasyPts"])
 gl_mp     = _pick_col(gamelog, ["MP"])
+gl_jersey = _pick_col(gamelog,["Jersey #"])
 
 lt_player = _pick_col(latest, ["Full Name"])
 lt_team   = _pick_col(latest, ["FullTeamName" ])
+lt_jersey = _pick_col(latest,["#"])
 
 missing = []
 if not gl_player: missing.append("gamelog player column")
@@ -149,8 +151,10 @@ if missing:
 # Normalize strings
 gamelog[gl_player] = gamelog[gl_player].astype(str).str.strip()
 gamelog[gl_team] = gamelog[gl_team].astype(str).str.strip()
+gamelog[gl_jersey] = gamelog[gl_jersey].astype(str).str.strip()
 latest[lt_player] = latest[lt_player].astype(str).str.strip()
 latest[lt_team] = latest[lt_team].astype(str).str.strip()
+latest[lt_jersey] = latest[lt_jersey].astype(str).str.strip()
 
 # weeknum (use existing if present, else compute)
 wk_col = _pick_col(gamelog, ["weeknum", "week_num", "Week", "week"])
@@ -161,7 +165,7 @@ else:
     gamelog["weeknum"] = add_weeknum_from_date(gamelog[gl_date])
 
 # Build roster list for each team from fantasy_stats_latest
-rosters = latest[[lt_player, lt_team]].dropna().drop_duplicates().rename(
+rosters = latest[[lt_player,lt_jersey, lt_team]].dropna().drop_duplicates().rename(
     columns={lt_player: "Player", lt_team: "Team"}
 )
 rosters["Player"] = rosters["Player"].astype(str).str.strip()

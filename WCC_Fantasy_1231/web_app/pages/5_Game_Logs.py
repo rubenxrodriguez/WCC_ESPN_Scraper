@@ -52,7 +52,7 @@ if wcc_only:
 
 st.dataframe(
     filtered_gamelog.sort_values("Date", ascending=False)[
-        ["Date", "Name", "Team", "Opponent", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TO", "FantasyPts"]
+        ["Date", "Name", "Team", "Opponent","didWin", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TO", "FantasyPts"]
     ],
     use_container_width=True,
     height=400
@@ -93,7 +93,7 @@ if not player_logs.empty:
     st.subheader(f"📈 {player} | {jersey_display} | {year} | {height} | {hometown} — Game Log")
     st.dataframe(
         player_logs[
-            ["Date", "Team", "Opponent", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TO", "FantasyPts",'FGM','FGA','3PM','3PA']
+            ["Date", "Team", "Opponent","didWin", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TO", "FantasyPts",'FGM','FGA','3PM','3PA']
         ].sort_values("Date", ascending=False),
         use_container_width=True
     )
